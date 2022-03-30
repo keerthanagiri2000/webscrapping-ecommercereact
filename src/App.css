@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-around;
+    margin-top: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-container{
+    width: 300px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: #E7EBF0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-img-wrapper{
+    margin-left: 90px;
+    margin-top: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.card-title{
+    font-weight: 500;
+    margin-bottom: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-rating >p{
+    background-color: green;
+    color: #fff;
+    font-weight: 600;
+    padding-right: 5px;
+    
+    
+}
+.card-rating>div{
+    margin-top: 15px;
+}
+.card-rating{
+    display: flex;
+    
+}
+.card-price-offer-wrapper{
+    display: flex;
+    gap: 10px;
+    margin-top: 0px;
+}
+.card-img{
+width:120px;
+height:250px;
+object-fit: cover;
+}
+.card-content{
+    margin:0px 0px 10px 15px;
+}
+.card-offerprice{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.card-price{
+    font-size: 13px;
+    margin-top: 2px;
+    text-decoration: line-through;
+}
+.product-offer{
+    font-size: 13px;
+    margin-top: 2px;
+    color: green;
+    font-weight: 500;
 }
